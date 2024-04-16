@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="signin" id="signin">
+    <h1>Sign In</h1>
+    <br>
+    <form [formGroup]="signinform" (ngSubmit)="signup()">
+    <div class="row">
+    <div class="col-sm-2 item"><input formControlName="username" type="text" name="username" id="username" required placeholder="Username"></div>
+    <div class="col-sm-2 item"><input formControlName="password" type="text" name="password" id="password" required placeholder="Password"></div>
+    <div class="col-sm-1 item"><button >Sign In</button></div>
+    <div class="col-sm-4 item"><a routerLink="signup">Don't have an account? Sign Up!</a></div>
+    </div>
+    </form>
+    </div>
+</div>       
