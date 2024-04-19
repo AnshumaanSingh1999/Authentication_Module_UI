@@ -7,13 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  userdate:any
 
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    this.userdate=localStorage.getItem("usernamels")    
   }
+ 
   logout(){
+    localStorage.clear()
     this.router.navigate([""])
   }
-
 }
